@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato:wght@700&family=Teko&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #00b4d8;
+  color: white;
+}
+
+#app {
+  margin-top: 5vh;
+  display: grid;
+  justify-items: center;
+  font-size: 2rem;
+}
+#project-title {
+  text-align: center;
+  max-width: 95vw;
+}
+
+#length-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+  margin-top: 1rem;
+}
+
+.length {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  font-size: 2.5rem;
+}
+
+.icon-container {
+  background: transparent;
+  border: none;
+}
+
+.icon {
+  color: white;
+  font-size: 3rem;
+}
+.icon:hover {
+  cursor: pointer;
+  color: rgb(240, 220, 220);
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 90px;
+}
+
+.session {
+  margin: 1.5rem auto 1rem auto;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 1em;
+  font-size: 1.3em;
+  display: flex;
+  box-shadow: 3px 3px 10px 3px #056174 inset;
+}
+
+.control-btn {
+  font-size: 0.6em;
+  font-weight: 700;
+  min-width: 4em;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#start_stop {
+  background-color: green;
+}
+
+#reset {
+  background-color: brown;
+}
+
+.control-btn:hover {
+  color: white;
+}
+.control-btn:active {
+  transform: translateY(3px);
+}
+
+footer {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer p a {
+  margin-top: 1rem;
+  font-variant-caps: all-petite-caps;
+}
+
+.contact-icons {
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
+  padding: 5px;
+  margin: 2rem 1rem 10px 20px;
+  cursor: pointer;
+}
+
+.contact-icons:hover {
+  transform: rotate(-10deg);
+}
+
+.contact-icons:active {
+  transform: rotate(20deg);
+}
+@media only screen and (max-width: 800px) {
+  body {
+    touch-action: manipulation;
+  }
+  #app {
+    width: 100vw;
+    font-size: 1.3rem;
+  }
+
+  #length-container {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
+  .session {
+    margin: 0.4rem auto 0.4rem auto;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    font-size: 1.3em;
+  }
+
+  .control-btn {
+    font-weight: 700;
+    font-size: 1.2rem;
+    min-width: 3rem;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  footer {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  footer p a {
+    margin-top: 0.2rem;
+    font-variant-caps: all-petite-caps;
+  }
+
+  footer p {
+    margin-top: 0.3rem;
+  }
+
+  .contact-icons {
+    background-color: transparent;
+    color: black;
+    font-size: 50px;
+    padding: 5px;
+    margin: 0.4rem 0.5rem 0 1rem;
+    cursor: pointer;
+  }
+
+  .contact-icons:hover {
+    transform: rotate(-10deg);
+  }
+
+  .contact-icons:active {
+    transform: rotate(20deg);
+  }
+
+  #icon-container {
+    text-align: center;
+    width: 60vw;
+  }
+
+  /* MEDIA QUERY ENDS HERE */
+}

@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SessionLength from "./SessionLength";
+import BreakLength from "./BreakLength";
+import Session from "./Session";
+import { FaTwitter, FaFreeCodeCamp, FaGithubSquare } from "react-icons/fa";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div id="app">
+      <h1 id="project-title">
+        <u>25 + 5 Clock</u>{" "}
+      </h1>
+      <div id="length-container">
+        <SessionLength />
+        <BreakLength />
+      </div>
+      <Session />
+      <footer>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Designed by{" "}
+          <a href="mailto:croy4744@gmail.com" id="check">
+            {" "}
+            Chandan Roy
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <p>
+          {" "}
+          <a
+            href="https://github.com/croy47/drum_machine"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            Source Code
+          </a>
+        </p>
+        <div>
+          <a
+            href="https://twitter.com/chandan_py_js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className="contact-icons" />
+          </a>
+          <a
+            href="https://www.freecodecamp.org/croy4744"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFreeCodeCamp className="contact-icons" />
+          </a>
+
+          <a
+            href="https://github.com/croy47/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithubSquare className="contact-icons" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
