@@ -27,7 +27,7 @@ const App = () => {
         <p>
           {" "}
           <a
-            href="https://github.com/croy47/drum_machine"
+            href="https://github.com/croy47/Pomodoro-Timer"
             rel="noopener noreferrer"
             target="_blank"
           >
